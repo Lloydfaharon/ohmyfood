@@ -1,0 +1,189 @@
+
+*{
+   text-decoration:none;
+   font-family: 'Roboto', sans-serif;
+  
+  }
+
+
+/*--Les Mixin--*/
+
+  @mixin flexMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin btn-exp{
+    border-radius: 25px;
+    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  } 
+  @mixin btn-fonc{
+    border-radius: 20px;
+    background-color:#F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba($color: #000000, $alpha: 15%);
+  }
+  @mixin btn-cards{
+    border-radius: 20px;
+    background-color:#F6F6F6;
+  }
+  @mixin title{
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  @mixin ellipse{
+    border-radius: 12px;
+    background-color:#9356DC ;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-right: 320px;
+  }
+  @mixin badge{
+    position: absolute;
+    background-color: aquamarine;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body{
+    margin: 0px;
+  }
+/*--Header--*/
+h1{
+    font-size: 24px;
+   }
+.logo {
+        @include flexMid;
+        background-color: white;
+        box-shadow: 0 8px 2px -2px gray;
+        
+        img{
+           width:162px;
+           height: 30px;
+           padding: 14px 89px
+        }
+}
+.localisation {
+    @include flexMid;
+    width: 375px;
+    height: 50px;
+    background-color: #EAEAEA;
+}
+
+.info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    .d-title{
+        @include flexMid;
+        @include title;
+        width: 275px;
+        height: 68px;
+        text-align: center;
+      }
+    .d-para{
+        @include flexMid;
+        width: 315px;
+        height: 46px;
+        text-align: center;
+        font-size: 18px;
+        
+      }
+    
+}
+
+/*--boutons--*/
+
+.btn-explo{
+    @include flexMid;
+    div{
+        @include flexMid;
+        @include btn-exp;
+        width: 218px;
+        height: 50px;
+    } 
+}
+.allsectionBtn{
+    position: relative
+}
+.sectionBtn{
+    @include flexMid;
+    margin-bottom: 20px
+}
+.btn-fonct{
+    @include flexMid;
+    @include btn-fonc;
+    Width: 322px;    
+    Height: 72px
+}
+ .ellips{
+    @include flexMid;
+    @include ellipse;
+    width: 24px;
+    height: 24px;
+ }
+
+ .restaurants{
+    background-color:#EAEAEA; 
+    
+ }
+
+ .cards-resto{
+    @include btn-cards;
+    width: 340px;
+    height: 251px;
+    border-radius: 20px;
+    background-color: white;
+    img{
+        width: 340px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+     }
+
+ }
+
+ .d-card{
+    @include flexMid;
+    padding: 10px;
+    div{
+
+    }
+    h2{font-size: 20px;
+        margin: 10px 0px;
+    }
+ }
+
+ .new{
+    @include badge;
+    width: 80px;
+    height: 29px;
+    top: 680px;
+    left: 270px;
+   
+ }
+ .new2{
+    @include badge;
+    width: 80px;
+    height: 29px;
+    top: 950px;
+    left: 270px;
+   
+ }
+ /*-- footer--*/
+
+ .footerLogo{
+    img{
+        width: 139px;
+        height: 27px;
+        color: white;
+     }
+    }
+   

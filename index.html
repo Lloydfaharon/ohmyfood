@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
 </head>
 <body>
     <header>
-        <div>
+        <div class="toppage">
             <div class="logo"> 
                 <img src="assets/images/logo/ohmyfood.png">
             </div>
-            <div>
+            <div class="localisation">
                 <div>
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
@@ -26,65 +28,71 @@
         </div>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="info">
+            <div class="d-title">
                 <h1>Réservez le menu qui vous convient</h1>
+            </div>
+            <div class="d-para">
                 <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             </div>
-            <div>
-                <a href="#">Explorer nos restaurants</a>
-            </div>       
+            <a class="btn-explo"  href="#">
+              <div >
+                  <P>Explorer nos restaurants</P>
+              </div>
+            </a>       
         </section>
         <section class="fonctionnement">
             <div>
                 <h1>Fonctionnement</h1>
             </div>
-            <div>
-                <div>1</div>
-                <div>
-                    <div>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div>
-                        <h3>Choisissez un restaurant</h3>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>2</div>
-                <div>
-                    <div>
-                        <i class="fa-solid fa-list"></i>
-                    </div>
-                    <div>
-                        <h3>Composez votre menu</h3>
+            <div class="allsectionBtn">
+                <div class="sectionBtn">
+                    <div class="ellips">1</div>
+                    <div class="btn-fonct">
+                        <div>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div>
+                            <h3>Choisissez un restaurant</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div>3</div>
-                <div>
-                    <div>
-                        <i class="fa-sharp fa-solid fa-store"></i>
+                <div class="sectionBtn">
+                    <div class="ellips">2</div>
+                    <div class="btn-fonct">
+                        <div>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <div>
+                            <h3>Composez votre menu</h3>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Dégustez au restaurant</h3>
+                </div>
+                <div class="sectionBtn">
+                    <div class="ellips">3</div>
+                    <div class="btn-fonct">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-store"></i>
+                        </div>
+                        <div>
+                            <h3>Dégustez au restaurant</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="restaurants">
             <div>
                 <h1>Restaurants</h1>
             </div>
             <a href="#">
-                <article>
-                    <div>
+                <article class="sectionBtn">
+                    <div class="cards-resto">
                         <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                        <div>
+                        <div class="new">
                            <p>Nouveau</p>
                         </div>
-                        <div>
+                        <div class="d-card">
                             <div>
                                 <h2>La palette du goût</h2>
                                 <p>Ménilmontant</p>
@@ -97,13 +105,13 @@
                 </article>
             </a>
             <a href="#">
-                <article>
-                    <div>
+                <article class="sectionBtn">
+                    <div class="cards-resto">
                         <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                        <div>
+                        <div class="new2">
                            <p>Nouveau</p>
                         </div>
-                        <div>
+                        <div class="d-card">
                             <div>
                                 <h2>La note enchantée</h2>
                                 <p>Charonne</p>
@@ -116,13 +124,11 @@
                 </article>
             </a>
             <a href="#">
-                <article>
-                    <div>
+                <article class="sectionBtn">
+                    <div class="cards-resto">
                         <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                        <div>
-                           <p>Nouveau</p>
-                        </div>
-                        <div>
+                        
+                        <div class="d-card">
                             <div>
                                 <h2>À la française</h2>
                                 <p>Cité Rouge</p>
@@ -135,13 +141,11 @@
                 </article>
             </a>
             <a href="#">
-                <article>
-                    <div>
+                <article class="sectionBtn">
+                    <div class="cards-resto">
                         <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                        <div>
-                           <p>Nouveau</p>
-                        </div>
-                        <div>
+                        
+                        <div class="d-card">
                             <div>
                                 <h2>Le délice des sens</h2>
                                 <p>Folie-Méricourt</p>
@@ -156,16 +160,16 @@
         </section>
     </main>
     <footer>
-        <div>
-            <div>
-                <img src="assets/images/logo/ohmyfood.png">
+        <div class="sectionftr">
+            <div class="footerLogo">
+                <img src="assets/images/logo/ohmyfood@2x.svg">
             </div>
             <div>
-                <div></div>
+                <div><i class="fa-solid fa-utensils"></i></div>
                 <a href="#">Proposer un restaurant</a>
             </div>
             <div>
-                <div></div>
+                <div><i class="fa-solid fa-handshake-angle"></i></div>
                 <a href="#">Devenir partenaire</a>
             </div>
             <a href="#">Mentions légales</a>
