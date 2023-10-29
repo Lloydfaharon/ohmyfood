@@ -11,8 +11,15 @@ body {
 /*--Header--*/
 h1 {
   font-size: 24px;
+  margin-left: 20px;
 }
 
+/*h2{
+    color: #000000;
+}   
+p{
+    color: #000000
+}*/
 .logo {
   display: flex;
   justify-content: center;
@@ -30,7 +37,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 375px;
   height: 50px;
   background-color: #EAEAEA;
 }
@@ -39,6 +45,7 @@ h1 {
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: #F6F6F6;
 }
 .info .d-title {
   display: flex;
@@ -52,12 +59,12 @@ h1 {
   width: 275px;
   height: 68px;
   text-align: center;
+  padding: 44px 44px 6px;
 }
 .info .d-para {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 315px;
   height: 46px;
   text-align: center;
   font-size: 18px;
@@ -79,6 +86,11 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 218px;
   height: 50px;
+  margin: 25px 25px 55px;
+}
+
+.fonctionnement {
+  padding: 40px 0px;
 }
 
 .allsectionBtn {
@@ -103,6 +115,23 @@ h1 {
   Height: 72px;
 }
 
+.btn-fonctR {
+  width: 70%;
+  margin-left: 20px;
+}
+.btn-fonctR h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-fonctL i {
+  color: #7E7E7E;
+}
+
+.btn-fonctLD {
+  color: #9356DC;
+}
+
 .ellips {
   display: flex;
   justify-content: center;
@@ -118,7 +147,8 @@ h1 {
 }
 
 .restaurants {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
+  padding: 45px 0px;
 }
 
 .cards-resto {
@@ -141,11 +171,32 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
-.d-card h2 {
-  font-size: 20px;
-  margin: 10px 0px;
+.d-card .dLeft {
+  width: 80%;
+}
+.d-card .dLeft h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0px 4px;
+  color: #000000;
+}
+.d-card .dLeft p {
+  margin: 0px;
+  color: #000000;
+  font-weight: 300;
+  font-size: 17px;
+}
+.d-card svg {
+  width: 22px;
+  height: 21px;
+}
+.d-card .heart i {
+  width: 24px;
+  height: 24px;
+}
+.d-card .heart i :hover {
+  color: #9356DC;
 }
 
 .new {
@@ -156,7 +207,7 @@ h1 {
   align-items: center;
   width: 80px;
   height: 29px;
-  top: 680px;
+  top: 874px;
   left: 270px;
 }
 
@@ -168,13 +219,39 @@ h1 {
   align-items: center;
   width: 80px;
   height: 29px;
-  top: 950px;
+  top: 1145px;
   left: 270px;
 }
 
 /*-- footer--*/
-.footerLogo img {
+.sectionftr {
+  background-color: #353535;
+  padding: 22px 25px;
+}
+.sectionftr .footerLogo img {
   width: 139px;
   height: 27px;
+  margin-bottom: 16px;
+}
+.sectionftr .footerlink1 {
+  display: flex;
+}
+.sectionftr .footerlink1 i {
+  color: white;
+  margin-right: 11px;
+}
+.sectionftr .footerlink1 a {
+  color: white;
+}
+.sectionftr .footerlink2 {
+  display: flex;
+}
+.sectionftr .footerlink2 i {
+  color: white;
+  margin-right: 11px;
+  width: 14px;
+  height: 13px;
+}
+.sectionftr .footerlink2 a {
   color: white;
 }/*# sourceMappingURL=style.css.map */
