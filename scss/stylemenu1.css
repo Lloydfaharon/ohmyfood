@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -15,27 +16,28 @@ h2 {
 }
 
 main {
-  height: 1559px;
+  height: 1459px;
 }
 
 .toppage {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.toppage div {
-  margin-right: 42px;
+.toppage a i {
+  color: black;
+  margin: 0px 67px 0px 17px;
 }
-.toppage .logo {
+
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.toppage .logo img {
+.logo img {
   width: 162px;
-  height: 36px;
-  padding: 10px 16px;
+  height: 30px;
+  padding: 14px 16px;
 }
 
 .image-principal img {
@@ -43,12 +45,6 @@ main {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .all-menu {
@@ -62,35 +58,126 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.all-menu .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-menu .menu .menu-titre {
+  font-family: "shrikhand";
+  font-size: 21px;
+  margin-right: 60px;
+}
 
-.card-solo {
-  width: 322px;
-  height: 69px;
+.menu-sous-titre {
+  border-bottom: solid 3px rgb(153, 226, 208);
+  width: 40px;
+}
+.menu-sous-titre h2 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.menu-cards {
+  margin-bottom: 40px;
+}
+.menu-cards .card-solo {
+  width: 319px;
+  height: 42px;
   align-items: center;
   background-color: #FFF;
   border-radius: 15px;
   display: flex;
-  margin: 15px;
+  justify-content: space-between;
+  margin: 15px 0px;
   padding: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+:hover .menu-cards .card-solo .valide .menu-cards .card-solo .prix {
+  animation: slidorizon;
+  transform: scale(1.1);
 }
 
+.secleft {
+  height: 43px;
+  margin: 0px;
+  padding: 10px;
+}
+.secleft h2 {
+  margin: 0px 0px 5px;
+}
+.secleft p {
+  margin: 0px;
+}
+
+.prix {
+  display: flex;
+  justify-content: end;
+  width: 72px;
+  height: 72px;
+  align-items: self-end;
+  position: absolute;
+  left: 262px;
+  animation: slidorizonprix 2s;
+}
+
+.valide {
+  width: 59px;
+  height: 72px;
+  background: #99E2D0;
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 349px;
+  animation: slidorizon 2s;
+}
+
+@keyframes slidorizon {
+  from {
+    left: 349px;
+  }
+  to {
+    left: 290px;
+  }
+}
+@keyframes slidorizonprix {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 203px;
+  }
+}
 .btn-con {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0px;
 }
-.btn-con .btn {
+.btn-con :hover {
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  margin: 40px 0px;
   width: 186px;
   height: 50px;
   border-radius: 25px;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .all {
@@ -109,6 +196,7 @@ main {
 }
 .sectionftr .footerlink1 {
   display: flex;
+  margin-bottom: 5px;
 }
 .sectionftr .footerlink1 i {
   color: white;
@@ -119,6 +207,7 @@ main {
 }
 .sectionftr .footerlink2 {
   display: flex;
+  margin-bottom: 5px;
 }
 .sectionftr .footerlink2 i {
   color: white;
@@ -128,4 +217,27 @@ main {
 }
 .sectionftr .footerlink2 a {
   color: white;
+}
+
+.footerlink3 a {
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1183px)*/
+@media (min-width: 600px) {
+  .all-menu {
+    margin: 0px 746px;
+  }
+  .card-solo {
+    width: 604px;
+  }
+  .card-solo .valide {
+    left: 635px;
+  }
+  .card-solo .prix {
+    left: 546px;
+  }
 }/*# sourceMappingURL=stylemenu1.css.map */

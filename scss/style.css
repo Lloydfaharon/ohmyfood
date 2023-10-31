@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -56,7 +57,6 @@ p{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 275px;
   height: 68px;
   text-align: center;
   padding: 44px 44px 6px;
@@ -71,12 +71,12 @@ p{
 }
 
 /*--boutons--*/
-.btn-explo {
+.bouton {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn-explo div {
+.bouton .btn-explo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,6 +87,7 @@ p{
   width: 218px;
   height: 50px;
   margin: 25px 25px 55px;
+  color: white;
 }
 
 .fonctionnement {
@@ -158,6 +159,7 @@ p{
   height: 251px;
   border-radius: 20px;
   background-color: white;
+  position: relative;
 }
 .cards-resto img {
   width: 340px;
@@ -207,8 +209,9 @@ p{
   align-items: center;
   width: 80px;
   height: 29px;
-  top: 874px;
-  left: 270px;
+  top: 22px;
+  left: 248px;
+  z-index: 1;
 }
 
 .new2 {
@@ -219,8 +222,9 @@ p{
   align-items: center;
   width: 80px;
   height: 29px;
-  top: 1145px;
-  left: 270px;
+  top: 22px;
+  left: 248px;
+  z-index: 1;
 }
 
 /*-- footer--*/
@@ -254,4 +258,59 @@ p{
 }
 .sectionftr .footerlink2 a {
   color: white;
+}
+
+.footerlink3 a {
+  color: white;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1183px)*/
+@media (min-width: 600px) {
+  .d-title {
+    padding: 0px;
+  }
+  .d-title h1 {
+    margin-left: 0px;
+    font-size: 40px;
+  }
+  .allFonctionnement {
+    padding: 50px 180px;
+  }
+  .allFonctionnement .allsectionBtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .foncTitre h1 {
+    margin-left: 0px;
+  }
+  .allBtnCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+  }
+  .cards-resto {
+    width: 490px;
+  }
+  .cards-resto img {
+    width: 489px;
+  }
+  .cards-resto .new {
+    left: 392px;
+  }
+  .cards-resto .new2 {
+    left: 392px;
+  }
+  .footerLogo {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .restaurants {
+    padding: 45px 180px;
+  }
 }/*# sourceMappingURL=style.css.map */
