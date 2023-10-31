@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood</title>
+    <link rel="stylesheet" href="/scss/stylemenu1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=shrikhand">
 </head>
 <body>
     <header>
-        <div>
+        <div class="toppage">
             <div>
                 <i class="fa-sharp fa-solid fa-arrow-left"></i>
             </div>
@@ -22,12 +25,12 @@
     </header>
     <main>
         <section class="all">
-            <div>
+            <div class="image-principal">
                 <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
             </div>
-            <div>
+            <div class="all-menu">
                 <div class="menu">
-                    <div>
+                    <div class="menu-titre">
                         <h1>Le délice des sens</h1>
                     </div>
                     <div>
@@ -35,154 +38,158 @@
                     </div>
                 </div>
                 <div>
-                    <h2>Entrées</h2>
-                </div>
-                <div class="menu-cards">
                     <div>
-                        <div>
-                            <h2>Tartare e thon</h2>
-                            <p>Assaisonné au yuzu</p>
+                        <h2>Entrées</h2>
+                    </div>
+                    <div class="menu-cards">
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div>
-                            <p>25€</p>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h2>Tartare e thon</h2>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <div>
-                            <p>25€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h2>Tartare e thon</h2>
-                            <p>Assaisonné au yuzu</p>
-                        </div>
-                        <div>
-                            <p>25€</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <h2>Plats</h2>
-            </div>
-            <div class="menu-cards">
-                <div>
                     <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
+                        <h2>Plats</h2>
                     </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>Desserts</h2>
-            </div>
-            <div class="menu-cards">
-                <div>
-                    <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h2>Tartare e thon</h2>
-                        <p>Assaisonné au yuzu</p>
-                    </div>
-                    <div>
-                        <p>25€</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </div>
-                <div>
-                    <a href="#">
-                        <div>
-                            <h2>Commander</h2>
+                    <div class="menu-cards">
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </div>
-                    </a>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Desserts</h2>
+                    </div>
+                    <div class="menu-cards">
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="card-solo">
+                            <div class="secleft">
+                                <h2>Tartare e thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="prix">
+                                <p>25€</p>
+                            </div>
+                            <div class="valide">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="btn-con">
+                            <a href="#">
+                                <div class="btn">
+                                    <h2>Commander</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <div>
-                <img src="assets/images/logo/ohmyfood.png">
+        <div class="sectionftr">
+            <div class="footerLogo">
+                <img src="/assets/images/logo/ohmyfoodwhite.svg">
             </div>
             <div>
-                <div><i class="fa-solid fa-utensils"></i></div>
-                <a href="#">Proposer un restaurant</a>
+                <div class="footerlink1">
+                    <div><i class="fa-solid fa-utensils"></i></div>
+                    <a href="#">Proposer un restaurant</a>
+                </div>
+                <div class="footerlink2">
+                    <div><i class="fa-solid fa-handshake-angle"></i></div>
+                    <a href="#">Devenir partenaire</a>
+                </div>
+                <a href="#">Mentions légales</a><br>
+                <a href="#">contact</a> 
             </div>
-            <div>
-                <div><i class="fa-solid fa-handshake-angle"></i></div>
-                <a href="#">Devenir partenaire</a>
-            </div>
-            <a href="#">Mentions légales</a>
-            <a href="#">contact</a>
         </div>
-    </footer>   
+    </footer>
 </body>
 </html>
