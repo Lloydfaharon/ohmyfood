@@ -42,6 +42,10 @@ p{
   background-color: #EAEAEA;
 }
 
+.icnLocali {
+  margin-right: 17px;
+}
+
 .info {
   display: grid;
   justify-content: center;
@@ -99,6 +103,14 @@ p{
 }
 
 .sectionBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+
+.sectionBtnResto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,23 +287,75 @@ p{
     margin-left: 0px;
     font-size: 40px;
   }
+  .cards-resto {
+    width: 490px;
+  }
+  .cards-resto img {
+    width: 489px;
+  }
+  .cards-resto .new {
+    left: 392px;
+  }
+  .cards-resto .new2 {
+    left: 392px;
+  }
+}
+/* Medium devices (tablets, less/equal than 1183px)*/
+@media (min-width: 1400px) {
+  .d-title {
+    padding: 0px;
+  }
+  .d-title h1 {
+    margin-left: 0px;
+    font-size: 40px;
+  }
   .allFonctionnement {
     padding: 50px 180px;
   }
   .allFonctionnement .allsectionBtn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 10px;
+  }
+  .foncTitre {
+    display: flex;
+    justify-content: center;
+    margin-right: 907px;
   }
   .foncTitre h1 {
     margin-left: 0px;
   }
-  .allBtnCard {
-    display: grid;
+  .allBtnCardUp {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    align-self: stretch;
+    justify-content: center;
+    /*display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 100px;
-    grid-row-gap: 50px;
+    grid-row-gap: 50px;*/
+  }
+  .allBtnCardDown {
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    align-self: stretch;
+    margin-left: 100px;
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;*/
+  }
+  .bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
   }
   .cards-resto {
     width: 490px;
@@ -309,8 +373,33 @@ p{
     display: flex;
     justify-content: end;
     align-items: flex-end;
+    padding-top: 19px;
+    margin-left: 70px;
   }
   .restaurants {
     padding: 45px 180px;
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants .restTitre {
+    display: flex;
+    justify-content: center;
+    margin-right: 958px;
+  }
+  h1 {
+    margin-left: 0px;
+  }
+  .sectionftr {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .allFooterLink {
+    display: flex;
+    gap: 20px;
+    padding-top: 22px;
+  }
+  .footerlink3 {
+    display: flex;
+    gap: 6px;
   }
 }/*# sourceMappingURL=style.css.map */
