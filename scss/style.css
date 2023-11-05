@@ -15,12 +15,6 @@ h1 {
   margin-left: 20px;
 }
 
-/*h2{
-    color: #000000;
-}   
-p{
-    color: #000000
-}*/
 .logo {
   display: flex;
   justify-content: center;
@@ -94,8 +88,13 @@ p{
   color: white;
 }
 
-.fonctionnement {
+.allFonctionnement {
   padding: 40px 0px;
+}
+.allFonctionnement .foncTitre {
+  display: flex;
+  justify-content: center;
+  margin-right: 177px;
 }
 
 .allsectionBtn {
@@ -107,7 +106,6 @@ p{
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  margin-right: 35px;
 }
 
 .sectionBtnResto {
@@ -163,6 +161,11 @@ p{
   background-color: #F6F6F6;
   padding: 45px 0px;
 }
+.restaurants .restTitre {
+  display: flex;
+  justify-content: center;
+  margin-right: 220px;
+}
 
 .cards-resto {
   border-radius: 20px;
@@ -205,12 +208,8 @@ p{
   width: 22px;
   height: 21px;
 }
-.d-card .heart i {
-  width: 24px;
-  height: 24px;
-}
-.d-card .heart i :hover {
-  color: #9356DC;
+.d-card .heart {
+  color: #EAEAEA;
 }
 
 .new {
@@ -299,6 +298,32 @@ p{
   .cards-resto .new2 {
     left: 392px;
   }
+  .restaurants {
+    background-color: #F6F6F6;
+    padding: 45px 0px;
+  }
+  .restaurants .restTitre {
+    display: flex;
+    justify-content: center;
+    margin-right: 370px;
+  }
+  .allFonctionnement {
+    padding: 40px 0px;
+  }
+  .allFonctionnement .foncTitre {
+    display: flex;
+    justify-content: center;
+    margin-right: 333px;
+  }
+  .ellips {
+    margin-right: 490px;
+  }
+  .btn-fonct {
+    width: 490px;
+  }
+  .btn-fonct .btn-fonctR {
+    width: 40%;
+  }
 }
 /* Medium devices (tablets, less/equal than 1183px)*/
 @media (min-width: 1400px) {
@@ -312,18 +337,21 @@ p{
   .allFonctionnement {
     padding: 50px 180px;
   }
+  .allFonctionnement .foncTitre {
+    display: flex;
+    justify-content: center;
+    margin-right: 910px;
+  }
+  .allFonctionnement .foncTitre h1 {
+    margin-left: 0px;
+  }
   .allFonctionnement .allsectionBtn {
     display: flex;
     justify-content: center;
     padding: 0px 10px;
   }
-  .foncTitre {
-    display: flex;
-    justify-content: center;
-    margin-right: 907px;
-  }
-  .foncTitre h1 {
-    margin-left: 0px;
+  .allFonctionnement .allsectionBtn .sectionBtn {
+    margin-right: 35px;
   }
   .allBtnCardUp {
     display: flex;
@@ -331,11 +359,6 @@ p{
     gap: 100px;
     align-self: stretch;
     justify-content: center;
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 100px;
-    grid-row-gap: 50px;*/
   }
   .allBtnCardDown {
     justify-content: center;
@@ -344,11 +367,6 @@ p{
     gap: 100px;
     align-self: stretch;
     margin-left: 100px;
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 100px;
-    grid-row-gap: 50px;*/
   }
   .bloque {
     display: flex;
@@ -384,7 +402,7 @@ p{
   .restaurants .restTitre {
     display: flex;
     justify-content: center;
-    margin-right: 958px;
+    margin-right: 951px;
   }
   h1 {
     margin-left: 0px;
@@ -401,5 +419,14 @@ p{
   .footerlink3 {
     display: flex;
     gap: 6px;
+  }
+  .ellips {
+    margin-right: 320px;
+  }
+  .btn-fonct {
+    width: 322px;
+  }
+  .btn-fonct .btn-fonctR {
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
