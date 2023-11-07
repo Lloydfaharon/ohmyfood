@@ -26,14 +26,23 @@
   main{
     height: 1459px;
   }
+  header{
+    display: flex;
+    justify-content: center;
+  }
 
   .toppage{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     a{
+      display: flex;
+      position: absolute;
+      left: 20px;
         i{
             color:black;
-            margin: 0px 67px 0px 17px;
+            /*margin: 0px 67px 0px 17px;*/
         }
     }
   }
@@ -41,6 +50,8 @@
     .logo{
         @include flexMid;
         text-align: center;
+        padding: 0px 80px;
+        width: 90%;
         img{
             width: 162px;
             height: 30px;
@@ -274,15 +285,55 @@
 
 /* Medium devices (tablets, less/equal than 1183px)*/
 @media (min-width: 600px) {
-    
-    .card-solo{
-        width: 604px;
-        .valide{
-            left: 635px;
-        }
-        .prix{
-            left: 546px;
-        }
+
+  .toppage{
+    a{
+      left: 50px;
     }
+  }
+
+  .logo{
+    /*padding: 0px 572px;*/
+    width: 90%;
+  }
+    
+  .menu-cards{
+    margin-bottom: 40px;
+    .card-solo{
+      width: 605px;
+      .valide{
+        left: 635px;
+      }
+      .prix{
+        left: 546px;
+      }
+    }
+  }
+
+  h1{
+    margin-left: 0px;
+  }
+  .footerLogo{
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+      padding-top: 19px;
+      margin-left: 70px;
+  }
+  
+  .sectionftr{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .allFooterLink{
+    display: flex;
+    gap:20px;
+    padding-top: 22px;
+  }
+  .footerlink3{
+    display: flex;
+    gap:6px;
+  }
 
 }
