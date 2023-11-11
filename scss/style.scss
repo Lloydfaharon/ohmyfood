@@ -65,7 +65,7 @@
     justify-content: center;
     align-items:center ;
     opacity: 90%;
-    animation: enso 10s forwards;
+    animation: enso 3s forwards;
     
     
     
@@ -97,11 +97,14 @@
     0%{ 
         opacity: 0,5;
     }
-    99%{
-        opacity: 0,5;
+    70%{
+        opacity: 0,3;
+    }
+    90%{
+        opacity: 0,3;
     }
     100%{ 
-        opacity:0;
+        opacity:0,2;
         display: none;       
     }
   }
