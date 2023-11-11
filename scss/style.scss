@@ -65,8 +65,8 @@
     justify-content: center;
     align-items:center ;
     opacity: 90%;
-    animation: enso 2s;
-    animation-fill-mode: forwards;
+    animation: enso 10s forwards;
+    
     
     
     .loader{
@@ -85,25 +85,24 @@
         border-bottom-color: #FF79DA;
         border-radius: 50%;
         animation: chargeur 2S linear infinite;
-        animation-fill-mode: forwards;
+        
         img{
             width: 100px;
             height: 100px;
-        }
-        
-        
+        } 
       }
   }
+
   @keyframes enso{
-    0%{ opacity: 0;
-    
+    0%{ 
+        opacity: 0,5;
     }
-    99%{opacity: 0,5;
-      
+    99%{
+        opacity: 0,5;
     }
-    100%{ opacity:0;
-        
-     
+    100%{ 
+        opacity:0;
+        display: none;       
     }
   }
  
