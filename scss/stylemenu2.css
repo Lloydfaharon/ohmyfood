@@ -17,7 +17,7 @@ h2 {
 }
 
 main {
-  height: 1448px;
+  height: 1548px;
 }
 
 header {
@@ -84,8 +84,6 @@ header {
 }
 .all-menu .menu .menu-titre h1 {
   font-family: "Shrikhand", serif;
-  font-size: 28px;
-  font-weight: 400;
 }
 
 .menu-sous-titre {
@@ -128,16 +126,10 @@ header {
 }
 .secleft h2 {
   margin: 0px 0px 5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .secleft p {
   margin: 0px;
   font-weight: 300;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .prix {
@@ -164,30 +156,24 @@ header {
   position: absolute;
   left: 349px;
   animation: slidorizon 2s;
-  transition: 2s;
-}
-.valide :hover {
-  transition: left 290px;
 }
 
-/*
-@keyframes slidorizon{
-  from{
-      left: 349px;
+@keyframes slidorizon {
+  from {
+    left: 349px;
   }
-  to{
-      left: 290px;
-  }
-}
-@keyframes slidorizonprix{
-  from{
-      left: 262px;
-  }
-  to{
-      left: 203px;
+  to {
+    left: 290px;
   }
 }
-*/
+@keyframes slidorizonprix {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 203px;
+  }
+}
 .btn-con {
   display: flex;
   justify-content: center;
@@ -308,4 +294,4 @@ header {
     max-width: 1055px;
     margin: auto;
   }
-}/*# sourceMappingURL=stylemenu1.css.map */
+}/*# sourceMappingURL=stylemenu2.css.map */

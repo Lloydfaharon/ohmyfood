@@ -15,11 +15,6 @@
   @mixin fontshrik{
     font-family: 'Shrikhand', serif;
   }
-  @mixin rona{
-    white-space: nowrap;
-    text-overflow:ellipsis;
-    overflow: hidden;
-  }
  
   
 
@@ -36,7 +31,7 @@
     font-weight: 600
   }
   main{
-    height: 1448px;
+    height: 1548px;
   }
   header{
     display: flex;
@@ -98,8 +93,6 @@
             margin-right: 60px;
             h1{
               @include fontshrik;
-              font-size: 28px;
-              font-weight: 400;
 
             }
         }
@@ -145,13 +138,11 @@
     margin: 0px;
     padding: 10px;
     h2{
-         margin: 0px 0px 5px;
-         @include rona;
+         margin: 0px 0px 5px
     }
     p{
         margin:0px;
         font-weight: 300;
-        @include rona;
     }
   }
   .prix{
@@ -181,15 +172,8 @@
     position: absolute;
     left: 349px;
     animation: slidorizon 2s;
-    transition: 2s;
-    :hover {
-      transition: left 290px
-    
-    }
     
   }
-  
-  /*
   @keyframes slidorizon{
     from{
         left: 349px;
@@ -206,7 +190,6 @@
         left: 203px;
     }
   }
-  */
 
   
 
