@@ -57,10 +57,10 @@
   /*--loader--*/
   .boxloader{
     background-color:white;
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items:center ;
@@ -282,17 +282,15 @@ h1{
             font-size: 17px;
         }
     }
-   svg{
+    svg{
     width: 22px; 
     height:21px; 
-    
+    overflow: hidden;
+    fill: 193deg, #9356DC -11.44%, #FF79DA 123.93%;
    }
-    .heart{
-        color: #EAEAEA
-       
-       
-    }  
+   
  }
+
 
  .new{
     @include badge;
@@ -413,6 +411,13 @@ h1{
 
 /* Medium devices (tablets, less/equal than 1183px)*/
 @media (min-width: 1400px) {
+
+    .boxloader{
+        .loader{
+            margin-top: -500px;
+            margin-bottom: -500px;
+        }
+    }
 
     .d-title{
         padding: 0px;

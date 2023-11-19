@@ -116,15 +116,18 @@ header {
   position: relative;
   overflow: hidden;
 }
-:hover .menu-cards .card-solo .valide .menu-cards .card-solo .prix {
-  animation: slidorizon;
-  transform: scale(1.1);
+.menu-cards .card-solo:hover .valide {
+  transform: translate(-100%, 0);
+}
+.menu-cards .card-solo:hover .prix {
+  transform: translate(-100%, 0);
 }
 
 .secleft {
   height: 43px;
   margin: 0px;
   padding: 10px;
+  text-overflow: ellipsis;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
@@ -141,6 +144,7 @@ header {
 }
 
 .prix {
+  color: black;
   display: flex;
   justify-content: end;
   width: 72px;
@@ -149,7 +153,8 @@ header {
   position: absolute;
   left: 262px;
   font-weight: 700;
-  animation: slidorizonprix 2s;
+  /*animation: slidorizonprix 1s ;*/
+  transition: transform 330ms ease-in-out;
 }
 
 .valide {
@@ -163,31 +168,27 @@ header {
   align-items: center;
   position: absolute;
   left: 349px;
-  animation: slidorizon 2s;
-  transition: 2s;
-}
-.valide :hover {
-  transition: left 290px;
+  /*animation: slidorizon 1s ;
+  animation-fill-mode: forwar;*/
+  transition: transform 330ms ease-in-out;
 }
 
-/*
-@keyframes slidorizon{
-  from{
-      left: 349px;
-  }
-  to{
-      left: 290px;
-  }
-}
-@keyframes slidorizonprix{
-  from{
-      left: 262px;
-  }
-  to{
-      left: 203px;
-  }
-}
-*/
+/* @keyframes slidorizon{
+   from{
+       left: 349px;
+   }
+   to{
+       left: 290px;
+   }
+ }
+ @keyframes slidorizonprix{
+   from{
+       left: 262px;
+   }
+   to{
+       left: 203px;
+   }
+ }*/
 .btn-con {
   display: flex;
   justify-content: center;
@@ -307,5 +308,21 @@ header {
   .all-menu {
     max-width: 1055px;
     margin: auto;
+  }
+  @keyframes slidorizon {
+    from {
+      left: 636px;
+    }
+    to {
+      left: 577px;
+    }
+  }
+  @keyframes slidorizonprix {
+    from {
+      left: 579px;
+    }
+    to {
+      left: 495px;
+    }
   }
 }/*# sourceMappingURL=stylemenu1.css.map */
