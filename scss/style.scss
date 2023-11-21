@@ -281,14 +281,7 @@ h1{
             font-weight: 300;
             font-size: 17px;
         }
-    }
-    svg{
-    width: 22px; 
-    height:21px; 
-    overflow: hidden;
-    fill: 193deg, #9356DC -11.44%, #FF79DA 123.93%;
-   }
-   
+    } 
  }
 
 
@@ -299,9 +292,6 @@ h1{
     top: 22px;
     left: 248px;
    
-   
-
-   
  }
  .new2{
     @include badge;
@@ -309,9 +299,28 @@ h1{
     height: 29px;
     top: 22px;
     left: 248px;
-    
-   
  }
+ .svgHeartColor{
+    height: 24px;
+    width: 24px;
+    fill:#9356DC;
+    position: absolute;
+    left: 295px;
+    bottom: 35px;
+    opacity: 0%;
+    transition: opacity 1s;
+    z-index: 0;
+    &:hover {
+        opacity: 100%;
+   }   
+ }
+ 
+ .svgHeart{
+    fill:none;
+    width: 22px; 
+    height:21px; 
+ }
+
  /*-- footer--*/
 
  .sectionftr{
@@ -528,5 +537,8 @@ h1{
         .btn-fonctR{
             width: 70%;
         }
+    }
+    .svgHeartColor{
+        left: 430px;
     }
 }

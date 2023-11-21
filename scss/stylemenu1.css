@@ -116,30 +116,59 @@ header {
   position: relative;
   overflow: hidden;
 }
+.menu-cards .card-solo:active > .secleft {
+  /*transform:translate(-10%,0)
+  transform: scaleX(0);
+  transform-origin: 0%,100%;*/
+  animation: slidorizon 100s;
+}
 .menu-cards .card-solo:hover .valide {
   transform: translate(-100%, 0);
 }
 .menu-cards .card-solo:hover .prix {
-  transform: translate(-100%, 0);
+  transform: translate(-80%, 0);
 }
 
+@keyframes slidorizon {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 233px;
+  }
+}
 .secleft {
   height: 43px;
+  width: 300px;
   margin: 0px;
-  padding: 10px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /*transform-origin: 10% 100%;
+  transform: scaleX(1);
+  transition: transform 330ms ease;*/
+  animation: slidorizon 1s ease;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
 }
 .secleft p {
   margin: 0px;
+  font-size: 14px;
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
