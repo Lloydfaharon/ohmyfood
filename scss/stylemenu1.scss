@@ -28,8 +28,6 @@
 
     height: 1275px;
   }
-
-  
   
   h2{
     font-size: 18px;
@@ -58,7 +56,6 @@
         }
     }
   }
-    
     .logo{
         @include flexMid;
         text-align: center;
@@ -69,7 +66,7 @@
             height: 30px;
             padding: 14px 16px;
         }
-    }
+  }
   
   .image-principal{
     img{
@@ -134,16 +131,15 @@
         position: relative;
         overflow: hidden;
         
-        &:active { 
-          & > .secleft {
-          /*transform:translate(-10%,0)
-          transform: scaleX(0);
-          transform-origin: 0%,100%;*/
-            animation: slidorizon 100s;
-          }
-        }
+        &:hover .secleft{
+        animation: coulissement 330ms forwards;
+      } 
+      /*&:active .secleft{
+        transform: scaleX(1) 330ms ease-in-out;
+        transform-origin: (50%100%);
+      }*/
 
-        &:hover .valide {
+       &:hover .valide {
           transform:translate(-100%,0);
           
        }
@@ -153,14 +149,25 @@
        
     }
   }
-  @keyframes slidorizon{
-    from{
-        width: 300px;
-    }
-    to{
-        width:233px;
-    }
+ 
+
+@keyframes coulissement {
+  from {
+    width: 300px;
+  } to {
+    width: 220px;
   }
+}
+
+
+
+@keyframes slide {
+  from {
+    left: 262px;
+  } to {
+    left: 222px;
+  }
+}
 
   .secleft{
     height: 43px;
@@ -169,11 +176,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    /*transform-origin: 10% 100%;
-    transform: scaleX(1);
-    transition: transform 330ms ease;*/
-    animation: slidorizon 1s ease;
-
+    transform: scaleX(0) 330ms ease-in-out;
+    .focus{
+      animation: coulissement 330ms ease-in-out ;
+  }
     h2{
          margin: 0px 0px 5px;
          @include rona;
@@ -182,7 +188,7 @@
          text-overflow: ellipsis;
          overflow: hidden;
          font-weight: 500 ;
-         
+
     }
     p{
         margin:0px;
@@ -204,7 +210,6 @@
     position: absolute;
     left:262px ;
     font-weight: 700;
-    /*animation: slidorizonprix 1s ;*/
     transition: transform 330ms ease-in-out;
   }
 
@@ -219,31 +224,9 @@
     align-items: center;
     position: absolute;
     left: 349px;
-    /*animation: slidorizon 1s ;
-    animation-fill-mode: forwar;*/
     transition: transform 330ms ease-in-out;
-    
-    
-    
   }
   
-  
- /* @keyframes slidorizon{
-    from{
-        left: 349px;
-    }
-    to{
-        left: 290px;
-    }
-  }
-  @keyframes slidorizonprix{
-    from{
-        left: 262px;
-    }
-    to{
-        left: 203px;
-    }
-  }*/
  
   .btn-con{
     @include flexMid;
@@ -271,33 +254,6 @@
   .all{
     height: 1275px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  /*-- footer--*/
 
@@ -348,7 +304,7 @@
 
 /****** Media queries ***********/
 
-/* Medium devices (tablets, less/equal than 1183px)*/
+/* Medium devices (tablets, less/equal than 600px)*/
 @media (min-width: 600px) {
 
   .toppage{
@@ -358,7 +314,6 @@
   }
 
   .logo{
-    /*padding: 0px 572px;*/
     width: 90%;
   }
     
@@ -404,23 +359,6 @@
   .all-menu{
     max-width: 1055px;
     margin: auto;
-  }
-
-  @keyframes slidorizon{
-    from{
-        left: 636px;
-    }
-    to{
-        left: 577px;
-    }
-  }
-  @keyframes slidorizonprix{
-    from{
-        left: 579px;
-    }
-    to{
-        left: 495px;
-    }
   }
 
 

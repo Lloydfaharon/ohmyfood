@@ -115,12 +115,13 @@ header {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
+  /*&:active .secleft{
+    transform: scaleX(1) 330ms ease-in-out;
+    transform-origin: (50%100%);
+  }*/
 }
-.menu-cards .card-solo:active > .secleft {
-  /*transform:translate(-10%,0)
-  transform: scaleX(0);
-  transform-origin: 0%,100%;*/
-  animation: slidorizon 100s;
+.menu-cards .card-solo:hover .secleft {
+  animation: coulissement 330ms forwards;
 }
 .menu-cards .card-solo:hover .valide {
   transform: translate(-100%, 0);
@@ -129,12 +130,20 @@ header {
   transform: translate(-80%, 0);
 }
 
-@keyframes slidorizon {
+@keyframes coulissement {
   from {
     width: 300px;
   }
   to {
-    width: 233px;
+    width: 220px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
   }
 }
 .secleft {
@@ -144,10 +153,10 @@ header {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  /*transform-origin: 10% 100%;
-  transform: scaleX(1);
-  transition: transform 330ms ease;*/
-  animation: slidorizon 1s ease;
+  transform: scaleX(0) 330ms ease-in-out;
+}
+.secleft .focus {
+  animation: coulissement 330ms ease-in-out;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
@@ -182,7 +191,6 @@ header {
   position: absolute;
   left: 262px;
   font-weight: 700;
-  /*animation: slidorizonprix 1s ;*/
   transition: transform 330ms ease-in-out;
 }
 
@@ -197,27 +205,9 @@ header {
   align-items: center;
   position: absolute;
   left: 349px;
-  /*animation: slidorizon 1s ;
-  animation-fill-mode: forwar;*/
   transition: transform 330ms ease-in-out;
 }
 
-/* @keyframes slidorizon{
-   from{
-       left: 349px;
-   }
-   to{
-       left: 290px;
-   }
- }
- @keyframes slidorizonprix{
-   from{
-       left: 262px;
-   }
-   to{
-       left: 203px;
-   }
- }*/
 .btn-con {
   display: flex;
   justify-content: center;
@@ -289,13 +279,12 @@ header {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1183px)*/
+/* Medium devices (tablets, less/equal than 600px)*/
 @media (min-width: 600px) {
   .toppage a {
     left: 50px;
   }
   .logo {
-    /*padding: 0px 572px;*/
     width: 90%;
   }
   .menu-cards {
@@ -337,21 +326,5 @@ header {
   .all-menu {
     max-width: 1055px;
     margin: auto;
-  }
-  @keyframes slidorizon {
-    from {
-      left: 636px;
-    }
-    to {
-      left: 577px;
-    }
-  }
-  @keyframes slidorizonprix {
-    from {
-      left: 579px;
-    }
-    to {
-      left: 495px;
-    }
   }
 }/*# sourceMappingURL=stylemenu1.css.map */
