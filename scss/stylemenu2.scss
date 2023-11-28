@@ -6,6 +6,8 @@
    @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Shrikhand&display=swap');
 
    /*--Les Mixin--*/
+ 
+
 
   @mixin flexMid{
     display: flex;
@@ -24,8 +26,31 @@
     height: 1275px;
   }
 
+  .heart{
+    @include heart;
+    color: #000000;
+    display: block;
+
+    &:active>.heartColore{
+      display: none;
+    }
+    
   
-  
+   
+ }
+ .heartColore{
+    @include heart;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    opacity: 0%;
+    font-weight: 100;
+    transition: all 1s ease-out;
+    display: block; 
+ }
+
   h2{
     font-size: 18px;
     font-weight: 600

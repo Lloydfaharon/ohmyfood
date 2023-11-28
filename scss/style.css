@@ -305,17 +305,6 @@ h1 {
   left: 302px;
   bottom: 27px;
   color: #000000;
-  /*cursor: pointer;
-  z-index: 0;
-  font-size: 24px;
-  left: 302px;
-  bottom: 15px;
-
-  color:blac;
-  opacity: 100%;
-  :hover{
-      opacity: 0%;
-  }*/
 }
 
 .heartColore {
@@ -329,11 +318,8 @@ h1 {
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   opacity: 0%;
-  transition: color 2s ease-out;
-  /*z-index: 1;
-  font-size: 24px;
-  left: 302px;
-  bottom: 15px;*/
+  font-weight: 100;
+  transition: all 1s ease-out;
 }
 .heartColore:hover {
   opacity: 100%;
