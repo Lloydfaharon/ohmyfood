@@ -155,6 +155,7 @@ h1 {
   color: white;
 }
 
+/*--fonctionnement--*/
 .allFonctionnement {
   padding: 40px 0px;
 }
@@ -175,11 +176,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-.sectionBtnResto {
+.ellips {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-right: 320px;
+  width: 24px;
+  height: 24px;
 }
 
 .btn-fonct {
@@ -210,20 +218,7 @@ h1 {
   color: #9356DC;
 }
 
-.ellips {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  background-color: #9356DC;
-  color: white;
-  text-align: center;
-  position: absolute;
-  margin-right: 320px;
-  width: 24px;
-  height: 24px;
-}
-
+/*--restaurants--*/
 .restaurants {
   background-color: #F6F6F6;
   padding: 45px 0px;
@@ -232,6 +227,13 @@ h1 {
   display: flex;
   justify-content: center;
   margin-right: 220px;
+}
+
+.sectionBtnResto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .cards-resto {
@@ -249,27 +251,6 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-}
-
-.d-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.d-card .dLeft {
-  width: 80%;
-}
-.d-card .dLeft h2 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 15px 0px 4px;
-  color: #000000;
-}
-.d-card .dLeft p {
-  margin: 0px;
-  color: #000000;
-  font-weight: 300;
-  font-size: 17px;
 }
 
 .new {
@@ -296,25 +277,66 @@ h1 {
   left: 248px;
 }
 
-.svgHeartColor {
-  height: 24px;
-  width: 24px;
-  fill: #9356DC;
-  position: absolute;
-  left: 295px;
-  bottom: 35px;
-  opacity: 0%;
-  transition: opacity 1s;
-  z-index: 0;
+.d-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.svgHeartColor:hover {
-  opacity: 100%;
+.d-card .dLeft {
+  width: 80%;
+}
+.d-card .dLeft h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0px 4px;
+  color: #000000;
+}
+.d-card .dLeft p {
+  margin: 0px;
+  color: #000000;
+  font-weight: 300;
+  font-size: 17px;
 }
 
-.svgHeart {
-  fill: none;
-  width: 22px;
-  height: 21px;
+.heart {
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-50%);
+  left: 302px;
+  bottom: 27px;
+  color: #000000;
+  /*cursor: pointer;
+  z-index: 0;
+  font-size: 24px;
+  left: 302px;
+  bottom: 15px;
+
+  color:blac;
+  opacity: 100%;
+  :hover{
+      opacity: 0%;
+  }*/
+}
+
+.heartColore {
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-50%);
+  left: 302px;
+  bottom: 27px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 0%;
+  transition: color 2s ease-out;
+  /*z-index: 1;
+  font-size: 24px;
+  left: 302px;
+  bottom: 15px;*/
+}
+.heartColore:hover {
+  opacity: 100%;
 }
 
 /*-- footer--*/
@@ -514,5 +536,11 @@ h1 {
   }
   .svgHeartColor {
     left: 430px;
+  }
+  .heart {
+    left: 440px;
+  }
+  .heartColore {
+    left: 440px;
   }
 }/*# sourceMappingURL=style.css.map */

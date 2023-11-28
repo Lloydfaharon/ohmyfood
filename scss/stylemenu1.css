@@ -327,4 +327,20 @@ header {
     max-width: 1055px;
     margin: auto;
   }
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    }
+    to {
+      width: 290px;
+    }
+  }
+  @keyframes slide {
+    from {
+      left: 262px;
+    }
+    to {
+      left: 222px;
+    }
+  }
 }/*# sourceMappingURL=stylemenu1.css.map */
