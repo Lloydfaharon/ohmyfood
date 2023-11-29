@@ -5,6 +5,8 @@
 }
 
 /*--Les Mixin--*/
+/*--Les Mixin--*/
+/*--Les Mixin--*/
 body {
   margin: 0px;
 }
@@ -298,10 +300,136 @@ h1 {
   font-size: 17px;
 }
 
+/*--Heart1--*/
+.heart1 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  color: #000000;
+}
+
+.heartColore1 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 100%;
+  font-weight: 100;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore1 {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore1 {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
+}
+
+/*--Heart2--*/
+.heart2 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  color: #000000;
+}
+
+.heartColore2 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 100%;
+  font-weight: 100;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore2 {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore2 {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
+}
+
+/*--Heart3--*/
+.heart3 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  color: #000000;
+}
+
+.heartColore3 {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 100%;
+  font-weight: 100;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore3 {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore3 {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
+}
+
+/*--Heart4--*/
 .heart {
   font-size: 30px;
   position: absolute;
-  transform: translate(-50%);
   left: 302px;
   bottom: 27px;
   color: #000000;
@@ -310,19 +438,34 @@ h1 {
 .heartColore {
   font-size: 30px;
   position: absolute;
-  transform: translate(-50%);
   left: 302px;
   bottom: 27px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  opacity: 0%;
-  font-weight: 100;
-  transition: all 1s ease-out;
-}
-.heartColore:hover {
   opacity: 100%;
+  font-weight: 100;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
 }
 
 /*-- footer--*/
@@ -411,6 +554,12 @@ h1 {
   .btn-fonct .btn-fonctR {
     width: 40%;
   }
+  .heart {
+    left: 447px;
+  }
+  .heartColore {
+    left: 447px;
+  }
 }
 /* Medium devices (tablets, less/equal than 1183px)*/
 @media (min-width: 1400px) {
@@ -457,7 +606,6 @@ h1 {
     align-items: flex-start;
     gap: 100px;
     align-self: stretch;
-    margin-left: 100px;
   }
   .bloque {
     display: flex;

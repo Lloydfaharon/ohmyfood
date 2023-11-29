@@ -6,18 +6,8 @@
    @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Shrikhand&display=swap');
 
    /*--Les Mixin--*/
- 
-
-
-  @mixin flexMid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  @mixin fontshrik{
-    font-family: 'Shrikhand', serif;
-  }
- 
+   @import "./mixins.scss";
+   @
   
 
    body{
@@ -26,31 +16,8 @@
     height: 1275px;
   }
 
-  .heart{
-    @include heart;
-    color: #000000;
-    display: block;
 
-    &:active>.heartColore{
-      display: none;
-    }
-    
-  
-   
- }
- .heartColore{
-    @include heart;
-    
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    opacity: 0%;
-    font-weight: 100;
-    transition: all 1s ease-out;
-    display: block; 
- }
-
+ 
   h2{
     font-size: 18px;
     font-weight: 600
@@ -79,7 +46,7 @@
     }
   }
     
-    .logo{
+  .logo{
         @include flexMid;
         text-align: center;
         padding: 0px 80px;
@@ -98,19 +65,64 @@
         object-fit: cover;
     }    
   }  
+/*--Heart--*/
+
+.heart{
+  @include heart;
+  color: #000000;
+  left: 329px;
+  bottom: 1178px;
+}
+.heartColore{
+  @include heart;
+  @include heartcolor;
   
-  .all-menu{
-    background-color: #F6F6F6;
-    border-radius: 40px 40px 0px 0px;
-    position:relative;
-    top:-80px;
-    padding: 10px;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items:center;
+  left: 329px;
+  bottom: 1178px;
+  
+  
+  transition: opacity 1s ease-out;
+  
+}
+
+input[type="checkbox"]{
+  
+  
+  display: none;
+  pointer-events: none;
+
+  & + label{
+      cursor: pointer;
+
+      .heartColore{
+          opacity: 0%;
+      }
+  }
+  &:checked + label{
+      .heartColore{
+          opacity: 100%;
+      }
+  }
+}
+
+label{
+  width: 50px;
+  height: 50px;
+}
+
+  
+.all-menu{
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  position:relative;
+  top:-80px;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
    
-    .menu{
+  .menu{
         @include flexMid;
         .menu-titre{
             

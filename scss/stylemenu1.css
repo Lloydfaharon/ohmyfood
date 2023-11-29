@@ -6,6 +6,8 @@
 }
 
 /*--Les Mixin--*/
+/*--Les Mixin--*/
+/*--Les Mixin--*/
 body {
   margin: 0px;
   height: 1275px;
@@ -91,37 +93,46 @@ header {
 .heart {
   font-size: 30px;
   position: absolute;
-  transform: translate(-50%);
-  left: 329px;
-  bottom: 1181px;
+  left: 302px;
+  bottom: 27px;
   color: #000000;
-  display: block;
-}
-.heart:active > .heartColore {
-  display: none;
+  left: 329px;
+  bottom: 1178px;
 }
 
 .heartColore {
   font-size: 30px;
   position: absolute;
-  transform: translate(-50%);
-  left: 329px;
-  bottom: 1181px;
+  left: 302px;
+  bottom: 27px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  opacity: 0%;
-  font-weight: 100;
-  transition: all 1s ease-out;
-  display: block;
-  /*z-index: 1;
-  font-size: 24px;
-  left: 302px;
-  bottom: 15px;*/
-}
-.heartColore:hover {
   opacity: 100%;
+  font-weight: 100;
+  left: 329px;
+  bottom: 1178px;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
 }
 
 .menu-sous-titre {
@@ -386,14 +397,14 @@ header {
     font-size: 30px;
     position: absolute;
     transform: translate(-50%);
-    left: 673px;
+    left: 329px;
     bottom: 1181px;
   }
   .heartColore {
     font-size: 30px;
     position: absolute;
     transform: translate(-50%);
-    left: 673px;
+    left: 329px;
     bottom: 1181px;
   }
 }/*# sourceMappingURL=stylemenu1.css.map */
