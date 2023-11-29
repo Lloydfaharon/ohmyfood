@@ -6,8 +6,9 @@
    @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Shrikhand&display=swap');
 
    /*--Les Mixin--*/
+
    @import "./mixins.scss";
-   @
+   
   
 
    body{
@@ -65,20 +66,46 @@
         object-fit: cover;
     }    
   }  
-/*--Heart--*/
 
-.heart{
-  @include heart;
-  color: #000000;
-  left: 329px;
-  bottom: 1178px;
-}
-.heartColore{
+
+.all-menu{
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  position:relative;
+  top:-80px;
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+   
+  .menu{
+        @include flexMid;
+        .menu-titre{
+            
+            font-size: 21px;
+            margin-right: 60px;
+            h1{
+              @include fontshrik;
+
+            }
+        }
+      }
+  }
+  /*--Heart--*/
+
+  .heart{
+    @include heart;
+    color: #000000;
+    left: 345px;
+    bottom: 1271px;
+ }
+ .heartColore{
   @include heart;
   @include heartcolor;
   
-  left: 329px;
-  bottom: 1178px;
+  left: 345px;
+  bottom: 1271px;
   
   
   transition: opacity 1s ease-out;
@@ -104,37 +131,11 @@ input[type="checkbox"]{
       }
   }
 }
-
 label{
   width: 50px;
   height: 50px;
 }
 
-  
-.all-menu{
-  background-color: #F6F6F6;
-  border-radius: 40px 40px 0px 0px;
-  position:relative;
-  top:-80px;
-  padding: 10px;
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items:center;
-   
-  .menu{
-        @include flexMid;
-        .menu-titre{
-            
-            font-size: 21px;
-            margin-right: 60px;
-            h1{
-              @include fontshrik;
-
-            }
-        }
-      }
-  }
   .menu-sous-titre{
     
     border-bottom: solid 3px rgba(153, 226, 208, 1);
@@ -144,13 +145,12 @@ label{
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 5px;
-        
-
     }
     
   }
   .menu-cards{
     margin-bottom: 40px;
+  
     .card-solo{
         width: 319px;
         height: 42px;
@@ -164,25 +164,67 @@ label{
         box-shadow: 0px 4px 15px 0px rgba($color: #000000, $alpha: 15%);
         position: relative;
         overflow: hidden;
-        :hover & .valide & .prix{
-            animation: slidorizon;
-            transform: scale(1.1);
-        }
+        
+        &:hover .secleft{
+        animation: coulissement 330ms forwards;
+      } 
+     
+       &:hover .valide {
+          transform:translate(-100%,0); 
+       }
+       &:hover .prix {
+         transform:translate(-80%,0);
+      }
     }
   }
+ 
+@keyframes coulissement {
+  from {
+    width: 300px;
+  } to {
+    width: 220px;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 262px;
+  } to {
+    left: 222px;
+  }
+}
   .secleft{
     height: 43px;
+    width: 300px;
     margin: 0px;
-    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: scaleX(0) 330ms ease-in-out;
+    .focus{
+      animation: coulissement 330ms ease-in-out ;
+  }
     h2{
-         margin: 0px 0px 5px
+         margin: 0px 0px 5px;
+         @include rona;
+         font-size: 18px;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         font-weight: 500 ;
     }
     p{
-        margin:0px;
-        font-weight: 300;
+      margin:0px;
+      font-size: 14px;
+      font-weight: 300;
+      @include rona;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
   .prix{
+    color: black;
     display: flex;
     justify-content: end;
     width: 72px;
@@ -191,10 +233,7 @@ label{
     position: absolute;
     left:262px ;
     font-weight: 700;
-    animation: slidorizonprix 2s;
-
-    
-    
+    transition: transform 330ms ease-in-out;
   }
 
   .valide{
@@ -208,28 +247,8 @@ label{
     align-items: center;
     position: absolute;
     left: 349px;
-    animation: slidorizon 2s;
-    
+    transition: transform 330ms ease-in-out;
   }
-  @keyframes slidorizon{
-    from{
-        left: 349px;
-    }
-    to{
-        left: 290px;
-    }
-  }
-  @keyframes slidorizonprix{
-    from{
-        left: 262px;
-    }
-    to{
-        left: 203px;
-    }
-  }
-
-  
-
   
   .btn-con{
     @include flexMid;
@@ -239,7 +258,6 @@ label{
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
        }  
   }
-
 
   .btn{
     @include flexMid;
@@ -252,38 +270,10 @@ label{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
       
-    
   }
   .all{
     height: 1275px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  /*-- footer--*/
 
@@ -334,7 +324,7 @@ label{
 
 /****** Media queries ***********/
 
-/* Medium devices (tablets, less/equal than 1183px)*/
+/* Medium devices (tablets, less/equal than 600px)*/
 @media (min-width: 600px) {
 
   .toppage{
@@ -344,7 +334,6 @@ label{
   }
 
   .logo{
-    /*padding: 0px 572px;*/
     width: 90%;
   }
     
@@ -392,4 +381,42 @@ label{
     margin: auto;
   }
 
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    } to {
+      width: 290px;
+    }
+  }
+  
+  
+  @keyframes slide {
+    from {
+      left: 262px;
+    } to {
+      left: 222px;
+    }
+  }
+
+
+}
+/* Medium devices (tablets, less/equal than 1183px)*/
+@media (min-width: 1400px) {
+  @mixin heart{
+    font-size: 30px;
+    position: absolute;
+   
+    transform: translate(-50%);
+    left: 673px;
+    bottom: 1181px;
+  }
+
+.heart{
+  @include heart2;
+}
+.heartColore{
+  @include heart2;
+  
+
+}
 }

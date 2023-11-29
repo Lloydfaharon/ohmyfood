@@ -162,11 +162,7 @@ label{
         &:hover .secleft{
         animation: coulissement 330ms forwards;
       } 
-      /*&:active .secleft{
-        transform: scaleX(1) 330ms ease-in-out;
-        transform-origin: (50%100%);
-      }*/
-
+     
        &:hover .valide {
           transform:translate(-100%,0); 
        }

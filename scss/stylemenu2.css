@@ -13,51 +13,6 @@ body {
   height: 1275px;
 }
 
-.heart {
-  font-size: 30px;
-  position: absolute;
-  left: 302px;
-  bottom: 27px;
-  color: #000000;
-  left: 329px;
-  bottom: 1178px;
-}
-
-.heartColore {
-  font-size: 30px;
-  position: absolute;
-  left: 302px;
-  bottom: 27px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  opacity: 100%;
-  font-weight: 100;
-  left: 329px;
-  bottom: 1178px;
-  transition: opacity 1s ease-out;
-}
-
-input[type=checkbox] {
-  display: none;
-  pointer-events: none;
-}
-input[type=checkbox] + label {
-  cursor: pointer;
-}
-input[type=checkbox] + label .heartColore {
-  opacity: 0%;
-}
-input[type=checkbox]:checked + label .heartColore {
-  opacity: 100%;
-}
-
-label {
-  width: 50px;
-  height: 50px;
-}
-
 h2 {
   font-size: 18px;
   font-weight: 600;
@@ -133,6 +88,52 @@ header {
   font-family: "Shrikhand", serif;
 }
 
+/*--Heart--*/
+.heart {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  color: #000000;
+  left: 345px;
+  bottom: 1271px;
+}
+
+.heartColore {
+  font-size: 30px;
+  position: absolute;
+  left: 302px;
+  bottom: 27px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  opacity: 100%;
+  font-weight: 100;
+  left: 345px;
+  bottom: 1271px;
+  transition: opacity 1s ease-out;
+}
+
+input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+input[type=checkbox] + label .heartColore {
+  opacity: 0%;
+}
+input[type=checkbox]:checked + label .heartColore {
+  opacity: 100%;
+}
+
+label {
+  width: 50px;
+  height: 50px;
+}
+
 .menu-sous-titre {
   border-bottom: solid 3px rgb(153, 226, 208);
   width: 40px;
@@ -161,25 +162,69 @@ header {
   position: relative;
   overflow: hidden;
 }
-:hover .menu-cards .card-solo .valide .menu-cards .card-solo .prix {
-  animation: slidorizon;
-  transform: scale(1.1);
+.menu-cards .card-solo:hover .secleft {
+  animation: coulissement 330ms forwards;
+}
+.menu-cards .card-solo:hover .valide {
+  transform: translate(-100%, 0);
+}
+.menu-cards .card-solo:hover .prix {
+  transform: translate(-80%, 0);
 }
 
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 .secleft {
   height: 43px;
+  width: 300px;
   margin: 0px;
-  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: scaleX(0) 330ms ease-in-out;
+}
+.secleft .focus {
+  animation: coulissement 330ms ease-in-out;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
 }
 .secleft p {
   margin: 0px;
+  font-size: 14px;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .prix {
+  color: black;
   display: flex;
   justify-content: end;
   width: 72px;
@@ -188,7 +233,7 @@ header {
   position: absolute;
   left: 262px;
   font-weight: 700;
-  animation: slidorizonprix 2s;
+  transition: transform 330ms ease-in-out;
 }
 
 .valide {
@@ -202,25 +247,9 @@ header {
   align-items: center;
   position: absolute;
   left: 349px;
-  animation: slidorizon 2s;
+  transition: transform 330ms ease-in-out;
 }
 
-@keyframes slidorizon {
-  from {
-    left: 349px;
-  }
-  to {
-    left: 290px;
-  }
-}
-@keyframes slidorizonprix {
-  from {
-    left: 262px;
-  }
-  to {
-    left: 203px;
-  }
-}
 .btn-con {
   display: flex;
   justify-content: center;
@@ -292,13 +321,12 @@ header {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1183px)*/
+/* Medium devices (tablets, less/equal than 600px)*/
 @media (min-width: 600px) {
   .toppage a {
     left: 50px;
   }
   .logo {
-    /*padding: 0px 572px;*/
     width: 90%;
   }
   .menu-cards {
@@ -340,5 +368,38 @@ header {
   .all-menu {
     max-width: 1055px;
     margin: auto;
+  }
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    }
+    to {
+      width: 290px;
+    }
+  }
+  @keyframes slide {
+    from {
+      left: 262px;
+    }
+    to {
+      left: 222px;
+    }
+  }
+}
+/* Medium devices (tablets, less/equal than 1183px)*/
+@media (min-width: 1400px) {
+  .heart {
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 329px;
+    bottom: 1181px;
+  }
+  .heartColore {
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 329px;
+    bottom: 1181px;
   }
 }/*# sourceMappingURL=stylemenu2.css.map */

@@ -162,10 +162,6 @@ label {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
-  /*&:active .secleft{
-    transform: scaleX(1) 330ms ease-in-out;
-    transform-origin: (50%100%);
-  }*/
 }
 .menu-cards .card-solo:hover .secleft {
   animation: coulissement 330ms forwards;
