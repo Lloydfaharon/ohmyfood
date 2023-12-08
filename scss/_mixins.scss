@@ -57,6 +57,8 @@
   @mixin badge{
     position: absolute;
     background-color: aquamarine;
+    color: #1b6150;
+    border-radius: 2px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -75,4 +77,22 @@
     opacity: 100%;
     font-weight: 100;
 
+  }
+
+  @mixin heart3{
+    font-size: 30px;
+    position: absolute;
+   
+    
+    left: 673px;
+    bottom: 1181px;
+  }
+
+  @mixin heart2{
+    font-size: 30px;
+    position: absolute;
+   
+    
+    left: 673px;
+    bottom: 1181px;
   }

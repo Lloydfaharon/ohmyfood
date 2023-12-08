@@ -1,0 +1,43 @@
+@keyframes enso{
+    0%{ 
+        opacity: 0,5;
+    }
+    70%{
+        opacity: 0,3;
+    }
+    90%{
+        opacity: 0,3;
+    }
+    100%{ 
+        opacity:0,2;
+        display: none;       
+    }
+  }
+ 
+  @keyframes chargeur{
+    0%{
+      transform: rotate(0deg) scale(1);
+    }
+    50%{
+      transform:rotate (360deg) scale(1);
+    }
+    100%{
+      transform: rotate(720deg) scale(1);
+    }
+
+  }
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    } to {
+      width: 220px;
+    }
+  }
+
+  @keyframes slide {
+    from {
+      left: 262px;
+    } to {
+      left: 222px;
+    }
+  }

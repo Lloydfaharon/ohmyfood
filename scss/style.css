@@ -7,6 +7,48 @@
 /*--Les Mixin--*/
 /*--Les Mixin--*/
 /*--Les Mixin--*/
+@keyframes enso {
+  0% {
+    opacity: 0, 5;
+  }
+  70% {
+    opacity: 0, 3;
+  }
+  90% {
+    opacity: 0, 3;
+  }
+  100% {
+    opacity: 0, 2;
+    display: none;
+  }
+}
+@keyframes chargeur {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate 360deg scale(1);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 body {
   margin: 0px;
 }
@@ -46,32 +88,6 @@ body {
   height: 100px;
 }
 
-@keyframes enso {
-  0% {
-    opacity: 0, 5;
-  }
-  70% {
-    opacity: 0, 3;
-  }
-  90% {
-    opacity: 0, 3;
-  }
-  100% {
-    opacity: 0, 2;
-    display: none;
-  }
-}
-@keyframes chargeur {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate 360deg scale(1);
-  }
-  100% {
-    transform: rotate(720deg) scale(1);
-  }
-}
 /*--Header--*/
 h1 {
   font-size: 24px;
@@ -83,7 +99,9 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: white;
-  box-shadow: 0 8px 2px -2px gray;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
 }
 .logo img {
   width: 162px;
@@ -258,6 +276,8 @@ h1 {
 .new {
   position: absolute;
   background-color: aquamarine;
+  color: #1b6150;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,6 +290,8 @@ h1 {
 .new2 {
   position: absolute;
   background-color: aquamarine;
+  color: #1b6150;
+  border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;

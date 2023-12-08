@@ -8,6 +8,48 @@
 /*--Les Mixin--*/
 /*--Les Mixin--*/
 /*--Les Mixin--*/
+@keyframes enso {
+  0% {
+    opacity: 0, 5;
+  }
+  70% {
+    opacity: 0, 3;
+  }
+  90% {
+    opacity: 0, 3;
+  }
+  100% {
+    opacity: 0, 2;
+    display: none;
+  }
+}
+@keyframes chargeur {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate 360deg scale(1);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 body {
   margin: 0px;
   height: 1275px;
@@ -81,60 +123,43 @@ header {
   align-items: center;
 }
 .all-menu .menu .menu-titre {
+  display: flex;
+  align-items: center;
   font-size: 21px;
-  margin-right: 60px;
 }
 .all-menu .menu .menu-titre h1 {
   font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: 400;
+  margin-left: 25px;
+  margin-right: 20px;
 }
 
-.heart {
-  font-size: 30px;
-  position: absolute;
-  left: 302px;
-  bottom: 27px;
-  color: #000000;
-  left: 329px;
-  bottom: 1178px;
-}
-
-.heartColore {
-  font-size: 30px;
-  position: absolute;
-  left: 302px;
-  bottom: 27px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  opacity: 100%;
-  font-weight: 100;
-  left: 329px;
-  bottom: 1178px;
-  transition: opacity 1s ease-out;
-}
-
-input[type=checkbox] {
-  display: none;
-  pointer-events: none;
-}
-input[type=checkbox] + label {
+label .like {
+  display: block;
   cursor: pointer;
+  width: 22px;
+  height: 21px;
+  background-image: url("/assets/images/heart/Status=Default.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-input[type=checkbox] + label .heartColore {
-  opacity: 0%;
+label input {
+  display: none;
 }
-input[type=checkbox]:checked + label .heartColore {
-  opacity: 100%;
+label input:checked ~ .like {
+  background-image: url("/assets/images/heart/Status=Liked.jpg");
+  animation: opacityFade 1s;
 }
 
-label {
-  width: 50px;
-  height: 50px;
+@keyframes opacityFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 .menu-sous-titre {
   border-bottom: solid 3px rgb(153, 226, 208);
   width: 40px;
@@ -173,22 +198,6 @@ label {
   transform: translate(-80%, 0);
 }
 
-@keyframes coulissement {
-  from {
-    width: 300px;
-  }
-  to {
-    width: 220px;
-  }
-}
-@keyframes slide {
-  from {
-    left: 262px;
-  }
-  to {
-    left: 222px;
-  }
-}
 .secleft {
   height: 43px;
   width: 300px;
@@ -207,9 +216,6 @@ label {
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 18px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   font-weight: 500;
 }
 .secleft p {
@@ -218,9 +224,6 @@ label {
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -389,18 +392,12 @@ label {
 }
 /* Medium devices (tablets, less/equal than 1183px)*/
 @media (min-width: 1400px) {
-  .heart {
-    font-size: 30px;
-    position: absolute;
-    transform: translate(-50%);
-    left: 673px;
-    bottom: 1181px;
+  /*.heart{
+    @include heart2;
   }
-  .heartColore {
-    font-size: 30px;
-    position: absolute;
-    transform: translate(-50%);
-    left: 673px;
-    bottom: 1181px;
-  }
+  .heartColore{
+    @include heart2;
+
+
+  }*/
 }/*# sourceMappingURL=stylemenu1.css.map */
