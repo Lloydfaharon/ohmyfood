@@ -28,7 +28,7 @@
     transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: rotate 360deg scale(1);
+    transform: rotate(360deg) scale(1.2);
   }
   100% {
     transform: rotate(720deg) scale(1);
@@ -187,6 +187,7 @@ label input:checked ~ .like {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
+  animation: opacityFade 2S;
 }
 .menu-cards .card-solo:hover .secleft {
   animation: coulissement 330ms forwards;
@@ -205,10 +206,6 @@ label input:checked ~ .like {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  transform: scaleX(0) 330ms ease-in-out;
-}
-.secleft .focus {
-  animation: coulissement 330ms ease-in-out;
 }
 .secleft h2 {
   margin: 0px 0px 5px;

@@ -136,6 +136,7 @@ label {
 }
 .menu-cards{
   margin-bottom: 40px;
+  
 
   .card-solo{
       width: 319px;
@@ -150,6 +151,7 @@ label {
       box-shadow: 0px 4px 15px 0px rgba($color: #000000, $alpha: 15%);
       position: relative;
       overflow: hidden;
+      animation: opacityFade 2S;
       
       &:hover .secleft{
       animation: coulissement 330ms forwards;
@@ -171,10 +173,6 @@ label {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transform: scaleX(0) 330ms ease-in-out;
-    .focus{
-      animation: coulissement 330ms ease-in-out ;
-    }  
   
     h2{
          margin: 0px 0px 5px;
