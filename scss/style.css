@@ -59,7 +59,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 2;
+  z-index: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,6 @@ body {
   animation: enso 3s forwards;
 }
 .boxloader .loader {
-  opacity: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +253,16 @@ h1 {
   align-items: center;
   margin-bottom: 20px;
 }
+.sectionBtnResto .link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
 .cards-resto {
   width: 340px;
@@ -320,20 +329,23 @@ h1 {
 }
 
 /*--Heart1--*/
-label .like {
+.heart-btn {
+  z-index: 5;
+}
+.heart-btn .container-like .like {
   display: block;
   cursor: pointer;
   width: 22px;
   height: 21px;
-  background-image: url("/assets/images/heart/Status=Default.jpg");
+  background-image: url("/assets/images/heart/like.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-label input {
+.heart-btn .container-like input {
   display: none;
 }
-label input:checked ~ .like {
-  background-image: url("/assets/images/heart/Status=Liked.jpg");
+.heart-btn .container-like input:checked ~ .like {
+  background-image: url("/assets/images/heart/liked.png");
   animation: opacityFade 2s;
 }
 
@@ -529,7 +541,7 @@ label input:checked ~ .like {
     margin-left: 70px;
   }
   .restaurants {
-    padding: 45px 180px;
+    padding: 25px 180px;
     display: flex;
     flex-direction: column;
   }

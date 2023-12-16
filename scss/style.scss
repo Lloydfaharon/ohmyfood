@@ -19,20 +19,15 @@
     width: 100vw;
     height: 100vh;
     position:fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+    z-index: 6;
+    @include flexMid;
     opacity: 90%;
     animation: enso 3s forwards;
     
     
     
     .loader{
-        opacity: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexMid;
         margin: auto;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -179,7 +174,18 @@ h1{
  }
 .sectionBtnResto{
     @include flexMid;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    .link{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    }
 }
 .cards-resto{
     width: 340px;
@@ -196,6 +202,7 @@ h1{
  }
  .new{
     @include badge;
+    @include flexMid;
     width: 80px;
     height: 29px;
     top: 22px;
@@ -204,6 +211,7 @@ h1{
  }
 .new2{
     @include badge;
+    @include flexMid;
     width: 80px;
     height: 29px;
     top: 22px;
@@ -230,14 +238,16 @@ h1{
     } 
  }
  /*--Heart1--*/
- label {
+.heart-btn{
+  z-index: 5;
+  .container-like {
 
     .like {
         display: block;
         cursor: pointer;
         width: 22px;
         height: 21px;
-        background-image: url("/assets/images/heart/Status=Default.jpg");
+        background-image: url("/assets/images/heart/like.png");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -245,10 +255,12 @@ h1{
         display: none;
     }
     input:checked ~ .like {
-        background-image: url("/assets/images/heart/Status=Liked.jpg");
+        background-image: url("/assets/images/heart/liked.png");
         animation: opacityFade 2s;
     }
   }
+ }
+
   @keyframes opacityFade {
     from {
       opacity: 0;
@@ -465,7 +477,7 @@ h1{
         margin-left: 70px;
     }
     .restaurants{
-        padding: 45px 180px;
+        padding: 25px 180px;
         display: flex;
         flex-direction: column;
         .restTitre{

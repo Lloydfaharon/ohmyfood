@@ -74,6 +74,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 90px;
 }
 .toppage a {
   display: flex;
@@ -140,7 +141,7 @@ label .like {
   cursor: pointer;
   width: 22px;
   height: 21px;
-  background-image: url("/assets/images/heart/Status=Default.jpg");
+  background-image: url("/assets/images/heart/like.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -148,7 +149,7 @@ label input {
   display: none;
 }
 label input:checked ~ .like {
-  background-image: url("/assets/images/heart/Status=Liked.jpg");
+  background-image: url("/assets/images/heart/liked.png");
   animation: opacityFade 1s;
 }
 
