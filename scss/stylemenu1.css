@@ -83,7 +83,6 @@ header {
 }
 .toppage a i {
   color: black;
-  /*margin: 0px 67px 0px 17px;*/
 }
 
 .logo {
@@ -204,9 +203,6 @@ label input:checked ~ .like {
   height: 43px;
   width: 300px;
   margin: 0px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
