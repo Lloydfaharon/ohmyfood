@@ -41,3 +41,19 @@
       left: 222px;
     }
   }
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    } to {
+      width: 290px;
+    }
+  }
+  
+  
+  @keyframes slide {
+    from {
+      left: 262px;
+    } to {
+      left: 222px;
+    }
+  }

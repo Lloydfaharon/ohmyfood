@@ -49,6 +49,22 @@
     left: 222px;
   }
 }
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 body {
   margin: 0px;
   height: 1275px;
@@ -139,7 +155,7 @@ label .like {
   cursor: pointer;
   width: 22px;
   height: 21px;
-  background-image: url("/assets/images/heart/like.png");
+  background-image: url("assets/images/heart/like.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -147,7 +163,7 @@ label input {
   display: none;
 }
 label input:checked ~ .like {
-  background-image: url("/assets/images/heart/liked.png");
+  background-image: url("assets/images/heart/liked.png");
   animation: opacityFade 1s;
 }
 
@@ -319,7 +335,7 @@ label input:checked ~ .like {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 600px)*/
-@media (min-width: 600px) {
+@media (min-width: 649px) {
   .toppage a {
     left: 50px;
   }
@@ -366,31 +382,5 @@ label input:checked ~ .like {
     max-width: 1055px;
     margin: auto;
   }
-  @keyframes coulissement {
-    from {
-      width: 300px;
-    }
-    to {
-      width: 290px;
-    }
-  }
-  @keyframes slide {
-    from {
-      left: 262px;
-    }
-    to {
-      left: 222px;
-    }
-  }
 }
-/* Medium devices (tablets, less/equal than 1183px)*/
-@media (min-width: 1400px) {
-  /*.heart{
-    @include heart2;
-  }
-  .heartColore{
-    @include heart2;
-
-
-  }*/
-}/*# sourceMappingURL=stylemenu1.css.map */
+/* Medium devices (tablets, less/equal than 1183px)*//*# sourceMappingURL=stylemenu1.css.map */

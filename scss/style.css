@@ -48,6 +48,22 @@
     left: 222px;
   }
 }
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 290px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 body {
   margin: 0px;
 }
@@ -336,7 +352,7 @@ h1 {
   cursor: pointer;
   width: 22px;
   height: 21px;
-  background-image: url("/assets/images/heart/like.png");
+  background-image: url("assets/images/heart/like.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -344,7 +360,7 @@ h1 {
   display: none;
 }
 .heart-btn .container-like input:checked ~ .like {
-  background-image: url("/assets/images/heart/liked.png");
+  background-image: url("assets/images/heart/liked.png");
   animation: opacityFade 2s;
 }
 

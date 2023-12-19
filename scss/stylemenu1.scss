@@ -101,7 +101,7 @@ label {
       cursor: pointer;
       width: 22px;
       height: 21px;
-      background-image: url("/assets/images/heart/like.png");
+      background-image: url("assets/images/heart/like.png");
       background-size: contain;
       background-repeat: no-repeat;
   }
@@ -109,7 +109,7 @@ label {
       display: none;
   }
   input:checked ~ .like {
-      background-image: url("/assets/images/heart/liked.png");
+      background-image: url("assets/images/heart/liked.png");
       animation: opacityFade 1s;
   }
 }
@@ -291,7 +291,8 @@ label {
 /****** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 600px)*/
-@media (min-width: 600px) {
+
+@media (min-width: 649px) {
 
   .toppage{
     a{
@@ -347,34 +348,12 @@ label {
     margin: auto;
   }
 
-  @keyframes coulissement {
-    from {
-      width: 300px;
-    } to {
-      width: 290px;
-    }
-  }
-  
-  
-  @keyframes slide {
-    from {
-      left: 262px;
-    } to {
-      left: 222px;
-    }
-  }
+ 
 
 }
 /* Medium devices (tablets, less/equal than 1183px)*/
+
 @media (min-width: 1400px) {
 
 
-/*.heart{
-  @include heart2;
-}
-.heartColore{
-  @include heart2;
-  
-
-}*/
 }
