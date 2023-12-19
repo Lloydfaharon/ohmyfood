@@ -17,7 +17,6 @@
     opacity: 0, 3;
   }
   100% {
-    opacity: 0, 2;
     display: none;
   }
 }
@@ -32,7 +31,7 @@
     transform: rotate(720deg) scale(1);
   }
 }
-@keyframes coulissement {
+@keyframes coulissement1 {
   from {
     width: 300px;
   }
@@ -40,7 +39,7 @@
     width: 220px;
   }
 }
-@keyframes slide {
+@keyframes slide1 {
   from {
     left: 262px;
   }
@@ -79,7 +78,9 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 90%;
-  animation: enso 3s forwards;
+  animation: enso;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .boxloader .loader {
   display: flex;

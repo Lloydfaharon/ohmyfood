@@ -18,7 +18,6 @@
     opacity: 0, 3;
   }
   100% {
-    opacity: 0, 2;
     display: none;
   }
 }
@@ -33,7 +32,7 @@
     transform: rotate(720deg) scale(1);
   }
 }
-@keyframes coulissement {
+@keyframes coulissement1 {
   from {
     width: 300px;
   }
@@ -41,7 +40,7 @@
     width: 220px;
   }
 }
-@keyframes slide {
+@keyframes slide1 {
   from {
     left: 262px;
   }
@@ -205,7 +204,7 @@ label input:checked ~ .like {
   animation: opacityFade 2S;
 }
 .menu-cards .card-solo:hover .secleft {
-  animation: coulissement 330ms forwards;
+  animation: coulissement1 330ms forwards;
 }
 .menu-cards .card-solo:hover .valide {
   transform: translate(-100%, 0);
@@ -218,6 +217,9 @@ label input:checked ~ .like {
   height: 43px;
   width: 300px;
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .secleft h2 {
   margin: 0px 0px 5px;
@@ -348,6 +350,9 @@ label input:checked ~ .like {
   .menu-cards .card-solo {
     width: 605px;
   }
+  .menu-cards .card-solo:hover .secleft {
+    animation: coulissement 330ms forwards;
+  }
   .menu-cards .card-solo .valide {
     left: 635px;
   }
@@ -381,6 +386,22 @@ label input:checked ~ .like {
   .all-menu {
     max-width: 1055px;
     margin: auto;
+  }
+  @keyframes coulissement {
+    from {
+      width: 300px;
+    }
+    to {
+      width: 290px;
+    }
+  }
+  @keyframes slide {
+    from {
+      left: 262px;
+    }
+    to {
+      left: 222px;
+    }
   }
 }
 /* Medium devices (tablets, less/equal than 1183px)*//*# sourceMappingURL=stylemenu1.css.map */

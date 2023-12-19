@@ -9,7 +9,7 @@
         opacity: 0,3;
     }
     100%{ 
-        opacity:0,2;
+        
         display: none;       
     }
   }
@@ -27,7 +27,7 @@
     }
 
   }
-  @keyframes coulissement {
+  @keyframes coulissement1 {
     from {
       width: 300px;
     } to {
@@ -35,7 +35,7 @@
     }
   }
 
-  @keyframes slide {
+  @keyframes slide1 {
     from {
       left: 262px;
     } to {
