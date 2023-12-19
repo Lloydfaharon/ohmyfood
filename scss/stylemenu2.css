@@ -300,7 +300,7 @@ label input:checked ~ .like {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 600px)*/
-@media (min-width: 600px) {
+@media (min-width: 649px) {
   .toppage a {
     left: 50px;
   }
