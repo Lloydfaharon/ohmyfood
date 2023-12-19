@@ -352,7 +352,7 @@ h1 {
   cursor: pointer;
   width: 22px;
   height: 21px;
-  background-image: url("assets/images/heart/like.png");
+  background-image: url(https://lloydfaharon.github.io/ohmyfood/scss/assets/images/heart/like.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
