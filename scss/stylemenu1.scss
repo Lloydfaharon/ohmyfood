@@ -101,7 +101,7 @@ label {
       cursor: pointer;
       width: 22px;
       height: 21px;
-      background-image: url("../assets/images/heart/like.png");
+      background-image: url("/assets/images/heart/like.png");
       background-size: contain;
       background-repeat: no-repeat;
   }
@@ -109,7 +109,7 @@ label {
       display: none;
   }
   input:checked ~ .like {
-      background-image: url("../assets/images/heart/liked.png");
+      background-image: url("/assets/images/heart/liked.png");
       animation: opacityFade 1s;
   }
 }
