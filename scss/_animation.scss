@@ -5,9 +5,20 @@
     70%{
         opacity: 0,3;
     }
-    90%{
+  
+    100%{ 
+        
+        display: none;       
+    }
+  }
+  @-webkit-keyframes enso{
+    0%{ 
+        opacity: 0,5;
+    }
+    70%{
         opacity: 0,3;
     }
+  
     100%{ 
         
         display: none;       

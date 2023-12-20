@@ -7,8 +7,8 @@
 
    /*--Les Mixin--*/
 
-   @import "./mixins.scss";
-   @import "./animation.scss";
+   @import "../mixins.css";
+   @import "../animation.css";
  
    body{
     margin: 0px;
@@ -165,12 +165,31 @@ label {
     }
   }
 }  
+@keyframes coulissement {
+  from {
+    width: 300px;
+  } to {
+    width: 220px;
+  }
+}
+
+@keyframes slide {
+  from {
+    left: 262px;
+  } to {
+    left: 222px;
+  }
+}
  
   .secleft{
     height: 43px;
     width: 300px;
     margin: 0px;
     @include rona;
+    transform: scaleX(0) 330ms ease-in-out;
+    .focus{
+      animation: coulissement 330ms ease-in-out ;
+  }
    
   
     h2{

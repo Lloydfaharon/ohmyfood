@@ -8,13 +8,14 @@
 
 /*--Les Mixin--*/
 @import "./mixins.scss";
-@import "./animation.scss";
+@import "./animation";
 
   body{
     margin: 0px;
   }
   /*--loader--*/
-  .boxloader{
+  
+.boxloader{
     background-color:white;
     width: 100vw;
     height: 100vh;
@@ -25,6 +26,9 @@
     animation: enso  ;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    -webkit-animation: enso;
+    -webkit-animation-duration: 3S;
+    -webkit-animation-fill-mode: forwards;
   
     .loader{
         @include flexMid;
@@ -45,8 +49,8 @@
             width: 100px;
             height: 100px;
         } 
-      }
-  }
+    }
+}
 
 
 /*--Header--*/

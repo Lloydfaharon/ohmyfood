@@ -13,9 +13,6 @@
   70% {
     opacity: 0, 3;
   }
-  90% {
-    opacity: 0, 3;
-  }
   100% {
     display: none;
   }
@@ -81,6 +78,9 @@ body {
   animation: enso;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  -webkit-animation: enso;
+  -webkit-animation-duration: 3S;
+  -webkit-animation-fill-mode: forwards;
 }
 .boxloader .loader {
   display: flex;
