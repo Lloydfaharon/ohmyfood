@@ -7,8 +7,8 @@
 
    /*--Les Mixin--*/
 
-   @import "../mixins.css";
-   @import "../animation.css";
+   @import "./mixins.scss";
+   @import "./animation.scss";
  
    body{
     margin: 0px;
@@ -45,7 +45,7 @@
     }
   }
     .logo{
-        @include flexMid;
+      @include flexMid;
         text-align: center;
         padding: 0px 80px;
         width: 90%;
@@ -94,24 +94,20 @@
     }
   }
  
-label {
 
-  .like {
-      display: block;
-      cursor: pointer;
-      width: 22px;
-      height: 21px;
-      background-image: url("../assets/images/heart/like.png");
-      background-size: contain;
-      background-repeat: no-repeat;
+.like{
+  position: relative;
+  cursor: pointer;
+   &:hover .likedimg {
+    opacity: 1;
+    transition: all 4S;
+   
   }
-  input {
-      display: none;
-  }
-  input:checked ~ .like {
-      background-image: url("../assets/images/heart/liked.png");
-      animation: opacityFade 1s;
-  }
+}
+.likedimg{
+  position: absolute;
+  left: 0px;
+  opacity: 0;
 }
 @keyframes opacityFade {
   from {

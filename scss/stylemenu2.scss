@@ -25,7 +25,7 @@
     font-weight: 600
   }
   main{
-    height: 1548px;
+    height: 1533px;
   }
   header{
     display: flex;
@@ -100,24 +100,20 @@
 }
   /*--Heart--*/
 
-label {
-
-  .like {
-      display: block;
-      cursor: pointer;
-      width: 22px;
-      height: 21px;
-      background-image: url("../assets/images/heart/like.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-  }
-  input {
-      display: none;
-  }
-  input:checked ~ .like {
-      background-image: url("../assets/images/heart/liked.png");
-      animation: opacityFade 1s;
-  }
+.like{
+  position: relative;
+  cursor: pointer;
+   &:hover .likedimg {
+    opacity: 1;
+    transition: all 4S;
+   
+  
+   }
+}
+.likedimg{
+  position: absolute;
+  left: 0px;
+  opacity: 0;
 }
 @keyframes opacityFade {
   from {

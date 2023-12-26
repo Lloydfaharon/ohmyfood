@@ -149,7 +149,12 @@ h1{
     @include flexMid;
     @include btn-fonc;
     Width: 322px;    
-    Height: 72px
+    Height: 72px;
+    &:hover .fa-solid{
+        color: #9356DC
+
+    }
+    
 }
 .btn-fonctR{
     width: 70%;
@@ -199,7 +204,7 @@ h1{
     border-radius: 20px;
     background-color: white;
     position: relative;
-    img{
+    .image{
         width: 340px;
         height: 170px;
         object-fit: cover;
@@ -245,27 +250,26 @@ h1{
  }
  /*--Heart1--*/
 .heart-btn{
+   
   z-index: 5;
-  .container-like {
-
-    .like {
-        display: block;
-        cursor: pointer;
-        width: 22px;
-        height: 21px;
-        background-image: url("../assets/images/heart/like.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    input {
-        display: none;
-    }
-    input:checked ~ .like {
-        background-image: url("../assets/images/heart/liked.png");
-        animation: opacityFade 2s;
-    }
+  .like{
+    cursor: pointer;
+    position: relative;
+     &:hover .likedimg {
+      opacity: 1;
+      transition: all 4S;
+     
+    
+     }
   }
- }
+  .like{
+    margin-top: 10px;
+  }
+  .likedimg{
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+  }
 
   @keyframes opacityFade {
     from {
@@ -275,7 +279,7 @@ h1{
       opacity: 1;
     }
   }
-
+}
 
  
  /*-- footer--*/
@@ -334,7 +338,7 @@ h1{
     }
     .cards-resto{
         width: 490px;
-        img{
+        .image{
             width: 489px;
         }
         .new{
@@ -464,7 +468,7 @@ h1{
     }
     .cards-resto{
         width: 490px;
-        img{
+        .image{
             width: 489px;
         }
         .new{
@@ -518,32 +522,5 @@ h1{
         .btn-fonctR{
             width: 70%;
         }
-    }
-    .svgHeartColor{
-        left: 430px;
-    }
-    .heart{
-        left: 440px;
-    }
-    .heartColore{
-        left: 440px;
-    }
-    .heart1{
-        left: 440px;
-    }
-    .heartColore1{
-        left: 440px;
-    }
-    .heart2{
-        left: 440px;
-    }
-    .heartColore2{
-        left: 440px;
-    }
-    .heart3{
-        left: 440px;
-    }
-    .heartColore3{
-        left: 440px;
     }
 }

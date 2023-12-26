@@ -146,21 +146,19 @@ header {
   margin-right: 20px;
 }
 
-label .like {
-  display: block;
+.like {
+  position: relative;
   cursor: pointer;
-  width: 22px;
-  height: 21px;
-  background-image: url("../assets/images/heart/like.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-label input {
-  display: none;
+.like:hover .likedimg {
+  opacity: 1;
+  transition: all 4S;
 }
-label input:checked ~ .like {
-  background-image: url("../assets/images/heart/liked.png");
-  animation: opacityFade 1s;
+
+.likedimg {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
 }
 
 @keyframes opacityFade {
@@ -210,6 +208,22 @@ label input:checked ~ .like {
   transform: translate(-80%, 0);
 }
 
+@keyframes coulissement {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@keyframes slide {
+  from {
+    left: 262px;
+  }
+  to {
+    left: 222px;
+  }
+}
 .secleft {
   height: 43px;
   width: 300px;
@@ -217,6 +231,10 @@ label input:checked ~ .like {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transform: scaleX(0) 330ms ease-in-out;
+}
+.secleft .focus {
+  animation: coulissement 330ms ease-in-out;
 }
 .secleft h2 {
   margin: 0px 0px 5px;

@@ -234,6 +234,9 @@ h1 {
   Width: 322px;
   Height: 72px;
 }
+.btn-fonct:hover .fa-solid {
+  color: #9356DC;
+}
 
 .btn-fonctR {
   width: 70%;
@@ -287,7 +290,7 @@ h1 {
   background-color: white;
   position: relative;
 }
-.cards-resto img {
+.cards-resto .image {
   width: 340px;
   height: 170px;
   -o-object-fit: cover;
@@ -348,23 +351,22 @@ h1 {
 .heart-btn {
   z-index: 5;
 }
-.heart-btn .container-like .like {
-  display: block;
+.heart-btn .like {
   cursor: pointer;
-  width: 22px;
-  height: 21px;
-  background-image: url("../assets/images/heart/like.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
 }
-.heart-btn .container-like input {
-  display: none;
+.heart-btn .like:hover .likedimg {
+  opacity: 1;
+  transition: all 4S;
 }
-.heart-btn .container-like input:checked ~ .like {
-  background-image: url("../assets/images/heart/liked.png");
-  animation: opacityFade 2s;
+.heart-btn .like {
+  margin-top: 10px;
 }
-
+.heart-btn .likedimg {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+}
 @keyframes opacityFade {
   from {
     opacity: 0;
@@ -373,6 +375,7 @@ h1 {
     opacity: 1;
   }
 }
+
 /*-- footer--*/
 .sectionftr {
   background-color: #353535;
@@ -424,7 +427,7 @@ h1 {
   .cards-resto {
     width: 490px;
   }
-  .cards-resto img {
+  .cards-resto .image {
     width: 489px;
   }
   .cards-resto .new {
@@ -540,7 +543,7 @@ h1 {
   .cards-resto {
     width: 490px;
   }
-  .cards-resto img {
+  .cards-resto .image {
     width: 489px;
   }
   .cards-resto .new {
@@ -590,32 +593,5 @@ h1 {
   }
   .btn-fonct .btn-fonctR {
     width: 70%;
-  }
-  .svgHeartColor {
-    left: 430px;
-  }
-  .heart {
-    left: 440px;
-  }
-  .heartColore {
-    left: 440px;
-  }
-  .heart1 {
-    left: 440px;
-  }
-  .heartColore1 {
-    left: 440px;
-  }
-  .heart2 {
-    left: 440px;
-  }
-  .heartColore2 {
-    left: 440px;
-  }
-  .heart3 {
-    left: 440px;
-  }
-  .heartColore3 {
-    left: 440px;
   }
 }/*# sourceMappingURL=style.css.map */
